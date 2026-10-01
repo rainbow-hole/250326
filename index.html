@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <style>
-        body {
-    margin: 0;
-    min-height: 100vh;
-    background-image: url("wallpaper2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Colour Me Purple;
+           @font-face {
+    font-family: 'Colour Me Purple';
+    src: url("Colour Me Purple.ttf") format("truetype");
 }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("wallpaper2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        h1 {
+            font-family: 'Colour Me Purple', sans-serif;
+        }
+        
         .pagina {
             width: 90%;
             max-width: 700px;
@@ -28,11 +34,22 @@
             padding: 40px 20px;
         }
 
-        .texto {
+        .imagem-principal {
+            width: min(60vw, 400px);
+            height: min(60vw, 400px);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+       .texto {
             margin-top: 30px;
-            color: black;
+            color: white;
             font-size: 22px;
             line-height: 1.6;
+            font-weight: 200;
+            font-family: 'Colour Me Purple', sans-serif;
         }
 
         audio {
@@ -45,7 +62,6 @@
         }
     </style>
 </head>
-
 <body>
 
     <main class="pagina">
